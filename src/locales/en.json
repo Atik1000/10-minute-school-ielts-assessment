@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "searchPlaceholder": "Search for skills courses, or school programs...",
+    "menuItems": {
+      "class612": "Class 6-12",
+      "skill": "Skill",
+      "admission": "Admission",
+      "onlineBatch": "Online Batch",
+      "englishCentre": "English Centre",
+      "more": "More"
+    },
+    "languageToggle": "বাং",
+    "phoneNumber": "16910",
+    "loginButton": "Login"
+  }
+} 

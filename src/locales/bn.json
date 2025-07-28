@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "searchPlaceholder": "স্কিলস কোর্স, কিংবা স্কুল প্রোগ্রাম সার্চ করুন...",
+    "menuItems": {
+      "class612": "ক্লাস ৬-১২",
+      "skill": "স্কিল",
+      "admission": "ভর্তি",
+      "onlineBatch": "অনলাইন ব্যাচ",
+      "englishCentre": "ইংরেজি সেন্টার",
+      "more": "আরও"
+    },
+    "languageToggle": "En",
+    "phoneNumber": "16910",
+    "loginButton": "লগ-ইন"
+  }
+} 
