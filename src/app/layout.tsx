@@ -2,21 +2,21 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header/navbar";
-import { SITE_CONFIG, FONT_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG } from "@/lib/constants";
 
 // Font configuration with better optimization
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: FONT_CONFIG.subsets,
-  display: FONT_CONFIG.display,
-  preload: FONT_CONFIG.preload,
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: FONT_CONFIG.subsets,
-  display: FONT_CONFIG.display,
-  preload: FONT_CONFIG.preload,
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 // Enhanced metadata for better SEO
