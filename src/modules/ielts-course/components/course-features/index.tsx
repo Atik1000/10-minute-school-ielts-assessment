@@ -1,6 +1,6 @@
 "use client";
 import { CourseData, Section } from "../../types/ielts-course-data-types";
-import CourseLaidCard from "./course-laid-card";
+import CourseFeaturesCard from "./course-features-card";
 
 // Type guard to check if a section is a features section
 function isFeaturesSection(section: Section): boolean {
@@ -12,7 +12,7 @@ function findFeaturesSection(sections: Section[] | undefined): Section | undefin
   return sections?.find(isFeaturesSection);
 }
 
-export default function HowTheCourseLaidOut({
+export default function CourseFeatures({
   courseData,
 }: {
   courseData: CourseData | undefined;
@@ -29,7 +29,7 @@ export default function HowTheCourseLaidOut({
       <h2 className="text-xl text-black font-semibold pb-4">
         {featuresSection.name}
       </h2>
-      <CourseLaidCard features={featuresSection} />
+      <CourseFeaturesCard features={featuresSection} />
     </section>
   );
 }

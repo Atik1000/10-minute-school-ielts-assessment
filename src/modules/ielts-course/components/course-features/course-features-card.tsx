@@ -34,7 +34,7 @@ function FeatureItem({ feature }: { feature: Feature }) {
   );
 }
 
-export default function CourseLaidCard({
+export default function CourseFeaturesCard({
   features,
 }: {
   features: Section | undefined;

@@ -2,9 +2,9 @@
 import useIELTSCourse from "../hooks/use-ielts-course";
 import TopBanner from "../components/top-banner";
 import CourseInstructor from "../components/course-instructor";
-import HowTheCourseLaidOut from "../components/how-the-course-laid-out";
+import CourseFeatures from "../components/course-features";
 import LearningOutcomes from "../components/learning-outcomes";
-import CourseExclusiveFeature from "../components/course-exclusive-feature";
+import CourseExclusiveFeature from "../components/CourseExclusiveFeature";
 import ChecklistAndCTA from "../components/top-banner/course-trailer-and-checklist/checklist-and-cta";
 import CourseContact from "../components/top-banner/course-trailer-and-checklist/course-contact";
 import { useState } from "react";
@@ -26,7 +26,7 @@ export default function IELTSCourse() {
       <div className="max-w-[1200px] mx-auto px-4 flex gap-12">
         <div className="w-[700px] space-y-4">
           <CourseInstructor courseData={courseData?.data} />
-          <HowTheCourseLaidOut courseData={courseData?.data} />
+          <CourseFeatures courseData={courseData?.data} />
           <LearningOutcomes courseData={courseData?.data} />
           <CourseDetails courseData={courseData?.data} />
           <CourseExclusiveFeature courseData={courseData?.data} />
