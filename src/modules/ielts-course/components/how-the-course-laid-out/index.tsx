@@ -1,21 +1,35 @@
 "use client";
-import { CourseData } from "../../types/ielts-course-data-types";
+import { CourseData, Section } from "../../types/ielts-course-data-types";
 import CourseLaidCard from "./course-laid-card";
+
+// Type guard to check if a section is a features section
+function isFeaturesSection(section: Section): boolean {
+  return section.type === "features";
+}
+
+// Utility function to find features section
+function findFeaturesSection(sections: Section[] | undefined): Section | undefined {
+  return sections?.find(isFeaturesSection);
+}
 
 export default function HowTheCourseLaidOut({
   courseData,
 }: {
   courseData: CourseData | undefined;
 }) {
-  const features = courseData?.sections?.find(
-    (data) => data.type === "features"
-  );
+  const featuresSection = findFeaturesSection(courseData?.sections);
+
+  // Early return if no features section found
+  if (!featuresSection) {
+    return null;
+  }
+
   return (
-    <div className="py-4">
+    <section className="py-4">
       <h2 className="text-xl text-black font-semibold pb-4">
-        {features?.name}
+        {featuresSection.name}
       </h2>
-      <CourseLaidCard features={features} />
-    </div>
+      <CourseLaidCard features={featuresSection} />
+    </section>
   );
 }

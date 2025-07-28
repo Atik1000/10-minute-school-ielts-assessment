@@ -3,7 +3,7 @@ import useIELTSCourse from "../hooks/use-ielts-course";
 import TopBanner from "../components/top-banner";
 import CourseInstructor from "../components/course-instructor";
 import HowTheCourseLaidOut from "../components/how-the-course-laid-out";
-import WhatYouWillLearnByDoingThisCourse from "../components/what-you-will-learn-by-doing-this-course";
+import LearningOutcomes from "../components/learning-outcomes";
 import CourseExclusiveFeature from "../components/course-exclusive-feature";
 import ChecklistAndCTA from "../components/top-banner/course-trailer-and-checklist/checklist-and-cta";
 import CourseContact from "../components/top-banner/course-trailer-and-checklist/course-contact";
@@ -27,7 +27,7 @@ export default function IELTSCourse() {
         <div className="w-[700px] space-y-4">
           <CourseInstructor courseData={courseData?.data} />
           <HowTheCourseLaidOut courseData={courseData?.data} />
-          <WhatYouWillLearnByDoingThisCourse courseData={courseData?.data} />
+          <LearningOutcomes courseData={courseData?.data} />
           <CourseDetails courseData={courseData?.data} />
           <CourseExclusiveFeature courseData={courseData?.data} />
         </div>

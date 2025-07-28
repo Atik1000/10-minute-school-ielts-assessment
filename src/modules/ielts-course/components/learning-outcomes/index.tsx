@@ -2,14 +2,14 @@
 import { MdCheck } from "react-icons/md";
 import { CourseData, Pointer } from "../../types/ielts-course-data-types";
 
-// Type guard to check if a value is an Instructor
+// Type guard to check if a value is a Pointer
 function isPointers(value: any): value is Pointer {
   return (
     value && typeof value === "object" && "icon" in value && "text" in value
   );
 }
 
-export default function WhatYouWillLearnByDoingThisCourse({
+export default function LearningOutcomes({
   courseData,
 }: {
   courseData: CourseData | undefined;
